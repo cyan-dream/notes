@@ -85,4 +85,10 @@ git branch -d dev
 git push origin --delete dev
 ```
 
+### 放弃工作区更改
 
+```bash    
+# 如果有新增文件先跟踪
+git add .
+git reset --hard HEAD
+```
