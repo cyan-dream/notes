@@ -87,8 +87,25 @@ git push origin --delete dev
 
 ### 放弃工作区更改
 
-```bash    
+```bash
 # 如果有新增文件先跟踪
 git add .
 git reset --hard HEAD
+```
+
+### 修改最近一次提交
+
+```bash
+git commit -m "commit1"
+git commit --amend -m "commit2"
+#如果已经commit1推送到远程，需要强制推送
+git push --force-with-lease
+```
+
+### 删除远程和本地最近一次提交
+
+```bash
+git reset --hard HEAD~1
+git log
+git push --force-with-lease
 ```
