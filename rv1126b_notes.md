@@ -82,3 +82,11 @@ echo "Done. Now run: make"
   ```shell
   export LUAJIT_LIB=/home/zmq/rv1126b/rockchip/1.2.1/1126B_Linux/buildroot/\output/rockchip_invision_ipc/rockchip_invision_ipc/staging/usr/lib
   ```
+
+### 常用命令
+
+查看引脚复用
+
+```bash
+cat /sys/kernel/debug/pinctrl/pinctrl-rockchip-pinctrl/pinmux-pins
+```
